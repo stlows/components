@@ -1,0 +1,57 @@
+.contact-me {
+  background-color: #fff;
+  color: #0af;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.contact-me__main {
+  padding: 0.5em 1em;
+}
+.contact-me:hover .contact-me__main {
+}
+
+.contact-me ul.contact-me__items {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+.contact-me:hover ul.contact-me__items {
+  max-height: 86px;
+}
+
+.contact-me li.contact-me__item a {
+  border-radius: 10px;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #0af;
+  text-decoration: none;
+}
+.contact-me li.contact-me__item a:hover {
+  background-color: #f2f2f2;
+}
+
+.contact-me.under ul.contact-me__items {
+  top: calc(100% + 0.5em);
+}
+.contact-me .online {
+  width: 0.7em;
+  height: 0.7em;
+  display: inline-block;
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+  margin-right: 5px;
+}
